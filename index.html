@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Enquiry 2024-25</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        
+       
+        form{
+        float: right;
+        background-color: burlywood;
+        margin-right: 2%;
+  
+
+        } 
+       .form-group{
+        margin-left: 2%;
+        margin-right: 2%;
+        justify-content: center;
+       }
+        
+     
+       .form-check{
+        margin-left: 2%;
+        margin-right: 2%;
+       }
+       .head{
+        
+        margin-left: 2%;
+        margin-right: 2%;
+       }
+      
+    
+.btn{
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: green;
+    color: white;
+
+
+}
+.btn:hover{
+    background-color: lightgreen;
+}
+.q{
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 2%;
+
+}
+p{
+    text-align: center;
+}
+    
+    </style>
+</head>
+<body>
+   <img class="p" src="poornima.png" alt="poornima"><hr>
+   <img class="q" src="banner.jpg" alt="banner">
+
+
+    <form>
+        <h1 class="head">Admission Enquiry</h1>
+        <div class="form-group">
+          <label for="exampleInputName"></label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name*">
+          
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail"></label>
+          <input type="email" class="form-control" id="exampleInputPassword1" placeholder="Enter Email Address*">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputphone"></label>
+            <input type="tel" class="form-control" id="exampleInputPassword1"  placeholder="Enter Mobile Number*" maxlength="10">
+          </div>
+
+        <div class="form-group">
+            <label for="exampleInput"></label>
+            <input type="tel" class="form-control" id="exampleInputPassword1"  placeholder="Enter OTP*" maxlength="6">
+          </div><br>
+          <div class="form-group">
+          <select name="state_id" id="StateId" class="form-control select-arrow-cust widget_input" onchange="GetChildByMachineKey(this.value,'CityId');" data-label="Select State *" data-none-selected-text="Select State" fdprocessedid="oaxbdd"><option value="" selected="selected">Select State *</option><option value="26909">Andaman and Nicobar</option><option value="26920">Andhra Pradesh</option><option value="27573">Arunachal Pradesh</option><option value="27718">Assam</option><option value="28070">Bihar</option><option value="28449">Chandigarh</option><option value="28455">Chhattisgarh</option><option value="28644">Dadra And Nagar Haveli</option><option value="28650">Daman And Diu</option><option value="28655">Delhi</option><option value="28678">Goa</option><option value="28697">Gujarat</option><option value="28972">Haryana</option><option value="29297">Himachal Pradesh</option><option value="29424">Jammu and Kashmir</option><option value="29647">Jharkhand</option><option value="29881">Karnataka</option><option value="30137">Kerala</option><option value="177104">Ladakh</option><option value="30279">Lakshadweep</option><option value="30284">Madhya Pradesh</option><option value="30624">Maharashtra</option><option value="31026">Manipur</option><option value="31058">Meghalaya</option><option value="31123">Mizoram</option><option value="31172">Nagaland</option><option value="31227">Odisha</option><option value="31606">Puducherry</option><option value="31626">Punjab</option><option value="31766">Rajasthan</option><option value="32032">Sikkim</option><option value="32052">Tamil Nadu</option><option value="32319">Telangana</option><option value="32659">Tripura</option><option value="32784">Uttar Pradesh</option><option value="33411">Uttarakhand</option><option value="33506">West Bengal</option></select>
+        </div><br>
+        <div class="form-group">
+        <select name="course_id" id="CourseId" class="form-control select-arrow-cust widget_input" onchange="GetChildByMachineKey(this.value,'SpecializationId');" data-label="Select Course *" data-none-selected-text="Select Course" fdprocessedid="7eyf3"><option value="" selected="selected">Select Course *</option><option value="102265">B.Tech</option><option value="102266">B.Tech(Lateral Entry)</option></select>
+        </div><br>
+
+        <div class="form-group">
+            <select name="course_id" id="CourseId" class="form-control select-arrow-cust widget_input" onchange="GetChildByMachineKey(this.value,'SpecializationId');" data-label="Select Course *" data-none-selected-text="Select Course" fdprocessedid="7eyf3"><option value="" selected="selected">Select Specification *</option><option value="102265">Information Technology</option><option value="102266"></option></select>
+            </div><br>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">I agree to receive information from Poornima Group of Colleges*</label>
+        </div>
+       <button class="btn">Register</button>
+      </form>
+      <p>Designed by ASHISH AGRAWAL</p>
+</body>
+</html>
